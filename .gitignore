@@ -1,0 +1,25 @@
+# General files
+.DS_Store
+
+# Bower, Npm
+bower_components
+node_modules
+
+# Ignore Composer installed files
+wwwroot/wp
+wwwroot/vendor
+
+# Configuration files
+wwwroot/.env
+
+# Uploads, etc
+wwwroot/app/uploads
+wwwroot/app/upgrade
+
+# Plugins
+wwwroot/app/plugins/*
+!wwwroot/app/plugins/.gitkeep
+
+# Themes
+wwwroot/app/themes/*
+!wwwroot/app/themes/.gitkeep

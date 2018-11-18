@@ -1,0 +1,42 @@
+{
+    "name": "halfje-bruin/wp-skeleton",
+    "description": "WordPress Skeleton Site",
+    "authors": [
+        {
+            "name": "Kees de Bruin",
+            "homepage": "https://www.halfje-bruin.nl/"
+        }
+    ],
+    "type": "project",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ],
+    "config": {
+        "vendor-dir": "vendor"
+    },
+    "require": {
+        "vlucas/phpdotenv": "^1.0.6",
+        "johnpbloch/wordpress": ">=4.9",
+        "wpackagist-theme/twentyseventeen": "^1.7"
+    },
+    "require-dev": {
+        "wpackagist-plugin/wordpress-importer": "*"
+    },
+    "extra": {
+        "wordpress-install-dir": "wp",
+        "installer-paths": {
+            "app/plugins/{$name}/": [
+                "type:wordpress-plugin"
+            ],
+            "app/mu-plugins/{$name}/": [
+                "type:wordpress-muplugin"
+            ],
+            "app/themes/{$name}/": [
+                "type:wordpress-theme"
+            ]
+        }
+    }
+}
